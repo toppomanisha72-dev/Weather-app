@@ -33,6 +33,21 @@ searchBtn.addEventListener("click", async function () {
   document.getElementById("city").textContent = cityName;
   document.getElementById("temperature").textContent =
     weatherData.current.temperature_2m + "°C";
-  document.getElementById("description").textContent =
-    "Current weather 🌤️";
+  const code = weatherData.current.weather_code;
+
+let description = "Weather 🌤️";
+
+if (code === 0) {
+  description = "Clear sky ☀️";
+} else if (code <= 3) {
+  description = "Partly cloudy ⛅";
+} else if (code <= 67) {
+  description = "Rainy 🌧️";
+} else if (code <= 77) {
+  description = "Snowy ❄️";
+} else if (code >= 80) {
+  description = "Rain showers 🌦️";
+}
+
+document.getElementById("description").textContent = description;
 });
