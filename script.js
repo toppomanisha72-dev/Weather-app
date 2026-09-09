@@ -14,11 +14,12 @@ document.getElementById("description").textContent = "Loading... ⏳";
   );
 
   const locationData = await locationResponse.json();
-
   if (!locationData.results) {
-    alert("City not found");
-    return;
-  }
+  document.getElementById("city").textContent = "City not found ❌";
+  document.getElementById("temperature").textContent = "";
+  document.getElementById("description").textContent = "";
+  return;
+}
 
   const latitude = locationData.results[0].latitude;
   const longitude = locationData.results[0].longitude;
