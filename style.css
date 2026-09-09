@@ -37,3 +37,11 @@ button {
 #weather {
   margin-top: 25px;
 }
+#cityInput {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#searchBtn {
+  margin-left: 0;
+}
