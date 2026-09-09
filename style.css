@@ -74,3 +74,7 @@ button {
 body {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
 }
+.weather-app {
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
