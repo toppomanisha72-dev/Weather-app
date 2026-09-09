@@ -3,7 +3,7 @@ const searchBtn = document.getElementById("searchBtn");
 
 searchBtn.addEventListener("click", async function () {
   const city = input.value.trim();
-
+document.getElementById("description").textContent = "Loading... ⏳";
   if (city === "") {
     alert("Please enter a city");
     return;
