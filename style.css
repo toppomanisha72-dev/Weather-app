@@ -45,3 +45,8 @@ button {
 #searchBtn {
   margin-left: 0;
 }
+#temperature {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1976d2;
+}
