@@ -55,3 +55,19 @@ button {
   font-weight: bold;
   color: #555;
 }
+@media (max-width: 500px) {
+  .weather-app {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-left: 0;
+    width: 100%;
+  }
+    }
