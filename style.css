@@ -70,4 +70,7 @@ button {
     margin-left: 0;
     width: 100%;
   }
-    }
+    
+body {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
