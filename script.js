@@ -50,3 +50,10 @@ if (code === 0) {
 
 document.getElementById("description").textContent = description;
 });
+document.getElementById("description").textContent = description;
+
+document.getElementById("humidity").textContent =
+  "Humidity: " + weatherData.current.relative_humidity_2m + "%";
+
+document.getElementById("wind").textContent =
+  "Wind Speed: " + weatherData.current.wind_speed_10m + " km/h";
