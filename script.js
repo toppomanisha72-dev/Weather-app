@@ -49,7 +49,6 @@ if (code === 0) {
 }
 
 document.getElementById("description").textContent = description;
-document.getElementById("description").textContent = description;
 
 document.getElementById("humidity").textContent =
   "Humidity: " + weatherData.current.relative_humidity_2m + "%";
