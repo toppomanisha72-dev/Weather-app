@@ -51,7 +51,7 @@ searchBtn.addEventListener("click", async function () {
     const code = weatherData.current.weather_code;
 
     let description = "Weather 🌤️";
-
+    let icon = "🌤️";
     if (code === 0) {
       description = "Clear sky ☀️";
     } else if (code <= 3) {
