@@ -50,19 +50,22 @@ searchBtn.addEventListener("click", async function () {
 
     const code = weatherData.current.weather_code;
 
-    let description = "Weather 🌤️";
-    let icon = "🌤️";
     if (code === 0) {
-      description = "Clear sky ☀️";
-    } else if (code <= 3) {
-      description = "Partly cloudy ⛅";
-    } else if (code <= 67) {
-      description = "Rainy 🌧️";
-    } else if (code <= 77) {
-      description = "Snowy ❄️";
-    } else if (code >= 80) {
-      description = "Rain showers 🌦️";
-    }
+  description = "Clear sky";
+  icon = "☀️";
+} else if (code <= 3) {
+  description = "Partly cloudy";
+  icon = "⛅";
+} else if (code <= 67) {
+  description = "Rainy";
+  icon = "🌧️";
+} else if (code <= 77) {
+  description = "Snowy";
+  icon = "❄️";
+} else if (code >= 80) {
+  description = "Rain showers";
+  icon = "🌦️";
+                              }
 
     document.getElementById("description").textContent = description;
 
